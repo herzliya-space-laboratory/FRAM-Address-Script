@@ -1,0 +1,54 @@
+
+#define SYS_PARAM_1 0x04
+
+#define SYS_PARAM_2 0x0E
+
+#define SYS_PARAM_3 0x20
+
+#define SYS_PARAM_4 0x30
+
+#define SYS_PARAM_5 0x38
+
+#define SYS_PARAM_6 0x48
+
+#define SYS_PARAM_7 0x51
+
+#define GECKO_ADC_GAIN 0x10010
+
+#define GECKO_PGA_GAIN 0x10012
+
+#define GECKO_EXPOSURE 0x10016
+
+#define AUTO_PILOT_STATE 0x10017
+
+#define BEACON_LOW_BATTERY 0x311D
+
+#define TRANS_LOW_BATTERY 0x311F
+
+#define NUMBER_COMMAND 0x3121
+
+#define DELAY_COMMAND 0x3122
+
+#define NUMBER_PACKET_APRS 0x8CEE
+
+#define APRS_PACKETS 0x8CEF
+
+#define MUTE_TIME 0x8E59
+
+#define BEACON_BIT_RATE 0x8E5D
+
+#define ADCS_QUEUE_WAIT_TIME 0x6556
+
+#define ADCS_LOOP_DELAY 0x6546
+
+#define STATS 0x100
+
+#define FIRST_ACTIVATION 0x101
+
+#define TIME 0x105
+
+#define STOP_TELEMETRY 0x10A
+
+#define SHUT_ADCS 0x10B
+
+#define SHUT_CAM 0x10C
