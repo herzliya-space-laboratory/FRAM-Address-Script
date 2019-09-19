@@ -1,0 +1,12 @@
+{
+    "python.linting.enabled": false,
+    "python.formatting.provider": "autopep8",
+    "python.pythonPath": "venv/bin/python3",
+    "cSpell.words": [
+        "addr",
+        "fram",
+        "notna"
+    ],
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4
+}

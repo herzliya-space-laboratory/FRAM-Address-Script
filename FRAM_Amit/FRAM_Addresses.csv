@@ -1,0 +1,52 @@
+Needs Init?,Sub System,define address name,,Parameter name,,Start Addr.[hex],Size [bytes],End Addr.[hex] (not included),Default Value [hex]
+,,,,,,,,,
+0,EPS,,,,,,,,
+0,,,,,,,,,
+0,,,,,,,,,
+0,,,,,,,,,
+0,,,,,,,,,
+,Image Menagment,,,,,,,,
+0,Butcher,IMAGE_CHUNK_WIDTH,,Chunk Width,,D000,2,D001,10
+0,,IMAGE_CHUNK_HEIGHT,,Chunk Height,,D002,2,D004,0D
+0,Image DataBase,,,numberOfPictures,,10000,4,10004,00
+0,,,,nextId,,10004,2,10006,01
+0,,GECKO_FRAME_AMOUNT,,frameAmount,,10006,4,1000A,01
+0,,GECKO_FRAME_RATE,,frameRate,,1000A,4,1000E,01
+0,,GECKO_ADC_GAIN,,adcGain,,1000E,1,1000F,35
+0,,GECKO_PGA_GAIN,,pgaGain,,1000F,1,10010,01
+0,,GECKO_SENSOR_OFFSET,,sensorOffset,,10010,2,10012,3FC3
+0,,GECKO_EXPOSURE,,exposure,,10012,4,10016,26
+0,,AUTO_PILOT_STATE,,AutoThumbnailCreation,,10016,1,10017,FF
+0,,,,"ImageMetadata Array (1000 elements long, where each element is 24 bytes)",,10017,24000,15DD7,-
+,TRX,,,,,,,,
+0,TRX,FRAME_COUNT,,Frame count,,,,,-
+0,,BEACON_LOW_BATTERY,,beacon low battery,,311D,0,311D,-
+0,,TRANS_LOW_BATTERY,,transmit low battery,,311F,0,311F,-
+0,,NUMBER_COMMAND,,number command,,3121,0,3121,-
+0,,DELAY_COMMAND,,delay command,,3122,0,3122,-
+0,,NUMBER_PACKET_APRS,,number packet APRS,,8CEE,0,8CEE,-
+0,,APRS_PACKETS,,APRS packets,,8CEF,0,8CEF,-
+0,,,,beacon time,,8E58,0,8E58,-
+0,,MUTE_TIME,,mute time,,8E59,0,8E59,-
+0,,BEACON_BIT_RATE,,beacon bit rate,,8E5D,0,8E5D,-
+0,,,,transponder RSSI,,8E5E,0,8E5E,-
+,ADCS,,,,,,,,
+0,ADCS,,,,,,,,
+0,,,,Adcs Tlm Save vector,,6242,18,6254,0
+0,,,,Adcs TLM save period,,626C,18,627E,"0A,0A,0A,0A,0A,0A,0A,0A,0A,0A,0A,0A,0A,0A,0A,0A,0A,0A"
+0,,,,Adcs Override Flag,,6300,4,6304,0
+0,,ADCS_QUEUE_WAIT_TIME,,Adcs Queue wait time,,6552,4,6556,"E8,03,00,00"
+0,,ADCS_LOOP_DELAY,,Adcs task loop delay,,6542,4,6546,"E8,03,00,00"
+0,,,,Adcs system off delay,,6546,4,654A,"98,A3,00,00"
+,,,,,,0,0,0,-
+,,,,,,0,0,0,-
+, TLM Management,,,,,,,,
+0, TLM Management,,,FSFRAM,,0,0,0,-
+,Main,,,,,,,,
+0,Main,STATS,,state,,100,0,100,-
+0,,FIRST_ACTIVATION,,first activation flag,,101,0,101,-
+0,,TIME,,Time,,105,0,105,-
+0,,,,reset number,,109,0,109,-
+0,,STOP_TELEMETRY,,stop TLM,,10A,0,10A,-
+0,,SHUT_ADCS,,shut ADCS,,10B,0,10B,-
+0,,SHUT_CAM,,shut Camera,,10C,0,10C,-
