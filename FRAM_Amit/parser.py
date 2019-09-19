@@ -8,8 +8,12 @@ sizes = []
 
 for i in range(int(data["define address name"].count())):
     if pd.notna(data["define address name"][i]) and pd.notna(data["Start Addr.[hex]"][i]) and pd.notna(data["Size [bytes]"][i]):
-        f.write("#define " + str(data["define address name"][i]) +
-                "_FRAM_ADDR     " + "0x" + str(data["Start Addr.[hex]"][i]) + ";" + "\n")
+        if len(str(data["Start Addr.[hex]"][i])) == 1:
+            f.write("#define " + str(data["define address name"][i]) +
+                    "_FRAM_ADDR     " + "0x0" + str(data["Start Addr.[hex]"][i]) + ";" + "\n")
+        else:
+            f.write("#define " + str(data["define address name"][i]) +
+                    "_FRAM_ADDR     " + "0x" + str(data["Start Addr.[hex]"][i]) + ";" + "\n")
         addresses.append(int(str(data["Start Addr.[hex]"][i]), 16))
         f.write("#define " + str(data["define address name"][i]) +
                 "_DELAY_FRAM_SIZE     " + str(int(data["Size [bytes]"][i])) + ";" + "\n")

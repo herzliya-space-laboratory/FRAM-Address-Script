@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/amitgold/Documents/Code/FRAM_Parser/venv"
+set -gx VIRTUAL_ENV "/home/amitgold/Documents/Code/FRAM-Address-Script/FRAM_Amit/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

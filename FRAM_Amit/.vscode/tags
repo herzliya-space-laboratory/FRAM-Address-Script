@@ -1,0 +1,14 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+addresses	../parser.py	/^addresses = []$/;"	kind:variable	line:6
+count	../parser.py	/^count = 0$/;"	kind:variable	line:25
+data	../parser.py	/^data = pd.read_csv("FRAM_Addresses.csv")$/;"	kind:variable	line:2
+f	../parser.py	/^f = open("output.txt", "w")$/;"	kind:variable	line:4
+locations	../parser.py	/^locations = []$/;"	kind:variable	line:24
+parser.py	../parser.py	1;"	kind:file	line:1
+pd	../parser.py	/^import pandas as pd$/;"	kind:namespace	line:1
+sizes	../parser.py	/^sizes = []$/;"	kind:variable	line:7
